@@ -165,7 +165,7 @@
     {{ partial "header.html" . }}
 
     <div id="shelf-view">
-        <div class="book-spine" data-tag="all" onclick="openShelf('all', '全記録')">全記録</div>
+    <div class="book-spine" data-tag="all" onclick="openShelf('all', 'All Records')">All Records</div>
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
         <div class="book-spine" data-tag="{{ $name }}" onclick="openShelf('{{ $name }}', '#{{ $name }}')">
             {{ $name }}

@@ -8,7 +8,7 @@
     </div>
     {{ end }}
 
-{{ if eq .Section "posts" }}
+    {{ if eq .Section "posts" }}
     <div id="list-branding">
         <h1 id="list-title">
             <a href="{{ "posts/" | relURL }}">
@@ -20,7 +20,13 @@
 
     {{ if not .IsHome }}
     <div id="mini-branding">
-        <a href="{{ .Site.BaseURL }}">{{ if eq .Lang "en" }}{{ .Site.Params.title_en_mini | default .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</a>
+        <a href="{{ absURL "/" }}">
+            {{ if eq .Lang "en" }}
+                {{ .Site.Params.title_en_mini | default .Site.Title | safeHTML }}
+            {{ else }}
+                {{ .Site.Title | safeHTML }}
+            {{ end }}
+        </a>
     </div>
     {{ end }}
 
