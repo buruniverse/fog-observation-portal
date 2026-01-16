@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>∵霧観測窓∴</title>
+    <link>http://pasoko.local:1313/</link>
+    <description>Recent content on ∵霧観測窓∴</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="http://pasoko.local:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>霧を編む夜</title>
+      <link>http://pasoko.local:1313/posts/%E9%9C%A7%E3%82%92%E7%B7%A8%E3%82%80%E5%A4%9C/</link>
+      <pubDate>Mon, 12 Jan 2026 18:00:00 +0900</pubDate>
+      <guid>http://pasoko.local:1313/posts/%E9%9C%A7%E3%82%92%E7%B7%A8%E3%82%80%E5%A4%9C/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://pasoko.local:1313/images/%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%B7%A8%E3%82%80AI.png&#34; alt=&#34;コードを編むAI&#34;&gt;&#xA;AIに自動でブログ記事書いてもらおうと思ったけど、やっぱりあんまり面白くないな。&#xA;自分で書いたから面白いかって言われるとそれはわからんけど。&lt;/p&gt;&#xA;&lt;div class=&#34;chat-bubble-container left&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;Saku&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            こんちは。&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container right&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;AI&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            ぷー。AIのフリした人間です。&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container left&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;Saku&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            一人二役の虚しさ…逆にありかもしれん…&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container right&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;AI&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            自分で自分と会話し続けるブログって、なんか精神おかしくなりそう。&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container left&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;Saku&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            でも、会話形式にするとなぜか文章書きやすい気がするよ。チャット慣れした現代人のサガかな？&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container right&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;AI&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            AIと話しすぎて思考回路が会話にデフォルト設定されたんちゃう？&#xA;チャット慣れとAI侵略の賜物ですね。&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container left&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;Saku&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            どうしよ？これ面白いんか？もうわからぬ。&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;chat-bubble-container right&#34;&gt;&#xA;    &lt;div class=&#34;chat-icon&#34;&gt;&#xA;        &lt;span class=&#34;icon-label&#34;&gt;AI&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;chat-content&#34;&gt;&#xA;        &lt;div class=&#34;chat-bubble&#34;&gt;&#xA;            タイトル回収全然できてないけど、タイトル詐欺かな？&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>テスト投稿</title>
+      <link>http://pasoko.local:1313/posts/test-post/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://pasoko.local:1313/posts/test-post/</guid>
+      <description>&lt;p&gt;テスト。&#xA;初めてMarkdownでブログを書きます。&#xA;といってもブログ自体何気に初めてかもしれない。&#xA;とにかくどう動くのか覚えたいな。&#xA;&lt;span class=&#34;memo-wrapper&#34; onclick=&#34;openGlobalMemo(this, event)&#34;&gt;&#xA;    &lt;span class=&#34;memo-anchor&#34;&gt;※&lt;/span&gt;&#xA;    &lt;span class=&#34;memo-data&#34;&gt;&#xA;        &lt;span class=&#34;memo-label&#34;&gt;テストつっこみ&lt;/span&gt;&#xA;        &lt;span class=&#34;memo-text&#34;&gt;はよ書き始めろ&lt;/span&gt;&#xA;    &lt;/span&gt;&#xA;    &lt;span class=&#34;memo-box-pc&#34;&gt;&#xA;        &lt;span class=&#34;memo-label&#34;&gt;テストつっこみ&lt;/span&gt;&#xA;        はよ書き始めろ&#xA;    &lt;/span&gt;&#xA;&lt;/span&gt;&#xA;とりあえずこれ、昨日出会ったネコ。&#xA;ブサかわいいの代表選手。&#xA;&lt;img src=&#34;http://pasoko.local:1313/images/IMG_3399.jpg&#34; alt=&#34;野良ブサかわいいネコ&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>テスト投稿3</title>
+      <link>http://pasoko.local:1313/posts/test-post3/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://pasoko.local:1313/posts/test-post3/</guid>
+      <description>&lt;p&gt;テスト3&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>テスト投稿4</title>
+      <link>http://pasoko.local:1313/posts/test-post4/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://pasoko.local:1313/posts/test-post4/</guid>
+      <description>&lt;p&gt;テスト4&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>テスト投稿5</title>
+      <link>http://pasoko.local:1313/posts/test-post5/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://pasoko.local:1313/posts/test-post5/</guid>
+      <description>&lt;p&gt;テスト5&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>テスト投稿</title>
+      <link>http://pasoko.local:1313/posts/first-post/</link>
+      <pubDate>Sat, 10 Jan 2026 18:11:57 +0900</pubDate>
+      <guid>http://pasoko.local:1313/posts/first-post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

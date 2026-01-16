@@ -1,0 +1,106 @@
+baseURL = 'https://example.org/'
+title = '∵霧観測窓∴'
+defaultContentLanguage = 'ja'
+
+[languages]
+  [languages.ja]
+    languageName = '日本語'
+    contentDir = 'content/ja'
+    weight = 1
+    title = '∵霧観測窓∴'
+    # 日本語のメニュー
+[[languages.ja.menu.main]]
+        identifier = 'new'
+        pre = '★'
+        name = 'New!'
+        url = '/'
+        weight = 1
+    [[languages.ja.menu.main]]
+        identifier = 'random'
+        pre = 'x'
+        name = 'ランダムひと粒'
+        url = '#'
+        weight = 2
+    [[languages.ja.menu.main]]
+        identifier = 'blog'
+        pre = 'μ'
+        name = '雲海棚〈ブログ〉'
+        url = '/posts/'
+        weight = 3
+    [[languages.ja.menu.main]]
+        identifier = 'sns'
+        pre = '⨳'
+        name = '干渉縞棚〈*SNS〉'
+        url = 'https://twitter.com/your_id' # 実際のURLに
+        weight = 4
+    [[languages.ja.menu.main]]
+        identifier = 'media'
+        pre = 'Σ'
+        name = '膜棚〈ギャラリー〉'
+        url = '/media/'
+        weight = 5
+    [[languages.ja.menu.main]]
+        identifier = 'books'
+        pre = 'Ψ'
+        name = '構造棚〈論文・電子書籍〉'
+        url = '/books/'
+        weight = 6
+    [[languages.ja.menu.main]]
+        identifier = 'shop'
+        pre = '∞'
+        name = '欲棚〈ショップ〉'
+        url = 'https://yourshop.base.shop' # 実際のURLに
+        weight = 7
+
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    title = "∵ Fog <br class='mobile-break'>Observation <br class='mobile-break'>Portal ∴" 
+    # 英語のメニュー
+[[languages.en.menu.main]]
+        identifier = 'new'
+        pre = '★'
+        name = 'New!'
+        url = '/en/'
+        weight = 1
+    [[languages.en.menu.main]]
+        identifier = 'random'
+        pre = 'x'
+        name = 'Random Grain'
+        url = '#'
+        weight = 2
+    [[languages.en.menu.main]]
+        identifier = 'blog'
+        pre = 'μ'
+        name = 'Cloud Sea Shelf 〈Blog〉'
+        url = '/en/posts/'
+        weight = 3
+    [[languages.en.menu.main]]
+        identifier = 'sns'
+        pre = '⨳'
+        name = 'Interference Shelf 〈Social media〉'
+        url = 'https://twitter.com/your_id'
+        weight = 4
+    [[languages.en.menu.main]]
+        identifier = 'media'
+        pre = 'Σ'
+        name = 'Membrane Shelf 〈Gallery〉'
+        url = '/en/media/'
+        weight = 5
+    [[languages.en.menu.main]]
+        identifier = 'books'
+        pre = 'Ψ'
+        name = 'Structure Shelf 〈Books〉'
+        url = '/en/books/'
+        weight = 6
+    [[languages.en.menu.main]]
+        identifier = 'shop'
+        pre = '∞'
+        name = 'Desire Shelf 〈Shop〉'
+        url = 'https://yourshop.base.shop'
+        weight = 7
+
+# ...（省略）...
+
+# disableKinds = ["taxonomy", "term"]

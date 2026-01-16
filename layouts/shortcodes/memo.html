@@ -1,0 +1,11 @@
+<span class="memo-wrapper" onclick="openGlobalMemo(this, event)">
+    <span class="memo-anchor">※</span>
+    <span class="memo-data">
+        <span class="memo-label">{{ .Get 0 | default "Note" }}</span>
+        <span class="memo-text">{{ .Inner | markdownify }}</span>
+    </span>
+    <span class="memo-box-pc">
+        <span class="memo-label">{{ .Get 0 | default "Note" }}</span>
+        {{ .Inner | markdownify }}
+    </span>
+</span>

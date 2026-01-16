@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <nav id="nav-container">
+        {{ range .Site.Menus.main }}
+            <a href="{{ .URL | relLangURL }}" class="nav-item item-{{ .Weight }}" style="text-decoration: none; color: inherit;">
+                {{ if modBool .Weight 2 }}
+                    <span class="symbol">{{ .Pre }}</span>
+                    <span class="label label-right">
+                        {{ .Name | replaceRE "([〈\\(])" "<br>$1" | safeHTML }}
+                    </span>
+                {{ else }}
+                    <span class="label label-left">
+                        {{ .Name | replaceRE "([〈\\(])" "<br>$1" | safeHTML }}
+                    </span>
+                    <span class="symbol">{{ .Pre }}</span>
+                {{ end }}
+            </a>
+        {{ end }}
+    </nav>
+
+    {{ partial "scripts.html" . }}
+</body>
+</html>
