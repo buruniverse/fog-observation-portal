@@ -38,6 +38,21 @@
             /* スクロールバーは隠す */
             scrollbar-width: none; 
         }
+
+        #canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        
+        /* ここが重要：画面に合わせて強制的に引き伸ばす */
+        width: 100%;
+        height: 100%;
+        
+        /* 念の為のタッチ無効化（メニュー操作の邪魔をしないように） */
+        pointer-events: none; 
+    }
+    
         #nav-container::-webkit-scrollbar { display: none; }
     </style>
 </head>
