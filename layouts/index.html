@@ -2,6 +2,44 @@
 <html lang="{{ .Lang }}">
 <head>
     {{ partial "head.html" . }}
+    <style>
+        /* --- Safariの白い隙間 & バウンス撃退パッチ --- */
+        html {
+            /* 隙間が出ても背景色で埋める */
+            background: var(--bg-color);
+            /* Safari特有の「びよよーん」を禁止 */
+            overscroll-behavior: none;
+            height: 100%;
+        }
+
+        body {
+            margin: 0; padding: 0; width: 100%;
+            /* 画面全体を固定して隙間を物理的に作らせない */
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: hidden;
+            background: var(--bg-color);
+            overscroll-behavior: none;
+        }
+
+        /* --- メニューが画面からはみ出た時だけスクロールさせる --- */
+        #nav-container {
+            /* 外部CSSの配置設定（中央揃えなど）を崩さないよう、位置指定は最低限に */
+            position: absolute; 
+            top: 50%; left: 50%; 
+            transform: translate(-50%, -50%);
+            
+            /* メニューが多い時はこの箱の中でスクロール */
+            width: 100%; /* 横幅は既存CSSに任せつつ、確保はする */
+            max-height: 100vh; /* 画面の高さいっぱいまで */
+            overflow-y: auto; /* 縦スクロール許可 */
+            -webkit-overflow-scrolling: touch;
+            
+            /* スクロールバーは隠す */
+            scrollbar-width: none; 
+        }
+        #nav-container::-webkit-scrollbar { display: none; }
+    </style>
 </head>
 <body>
     {{ partial "header.html" . }}
