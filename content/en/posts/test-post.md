@@ -1,15 +1,17 @@
 ---
-title: "テスト投稿"
+title: "Test post"
 date: 2026-01-11
 draft: false
-image: "/images/IMG_3399.jpg" # サムネイル用
+image: "/images/IMG_3399.jpg" 
+tags: ["Daily Life"]
 ---
 
-テスト。
-初めてMarkdownでブログを書きます。
-といってもブログ自体何気に初めてかもしれない。
-とにかくどう動くのか覚えたいな。
+Test post.
+It's my first Markdown style blog article.
+Well, actually it's my first blog post in my life.
+I'd like to know how it works.
 
-とりあえずこれ、昨日出会ったネコ。
-ブサかわいいの代表選手。
-![野良ブサかわいいネコ](/images/IMG_3399.jpg)
+For now, I just put the photo of the stray cat I met today.
+It's the typical ugly but cute cat.
+
+![ugly cute stray cat](/images/IMG_3399.jpg)
