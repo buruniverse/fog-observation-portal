@@ -4,7 +4,15 @@
     {{ partial "head.html" . }}
     <style>
         /* --- 1. 基本設定 --- */
-        body { margin: 0; background: var(--bg-color); height: 100dvh; overflow: hidden; position: relative; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;     /* ここはシンプルに100%にする */
+            overflow: hidden; /* スクロール禁止 */
+            position: fixed;  /* ★追加: 画面に釘付けにする */
+            background: var(--bg-color);
+        }
         #canvas { position: fixed; top: 0; left: 0; z-index: 0; }
 
         /* タイトル消し */
