@@ -3,10 +3,10 @@
 <head>
     {{ partial "head.html" . }}
     <style>
-        /* --- ここに最強固定CSSを追加！ --- */
+        /* --- 1. 背景と土台（最強固定モード維持） --- */
         html {
             background: var(--bg-color);
-            overscroll-behavior: none; /* Safariのびよよーん禁止 */
+            overscroll-behavior: none;
             height: 100%;
         }
 
@@ -14,45 +14,89 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            /* 画面をガチガチに固定 */
+            /* 画面全体は動かさない（白い隙間対策） */
             position: fixed;
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            bottom: 0;
-            height: 100%;
+            top: 0; left: 0; right: 0; bottom: 0;
             overflow: hidden;
             background: var(--bg-color);
             overscroll-behavior: none;
         }
 
-        /* メニューの配置（既存のデザインがあればそれに合わせますが、基本中央配置にしておきます） */
+        /* --- 2. メニューが入る箱（ここだけスクロール許可） --- */
         #nav-container {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            
+            width: 85%;
+            max-width: 500px;
+            
+            /* 画面からはみ出したら、この箱の中でスクロールさせる */
+            max-height: 80vh;
+            overflow-y: auto;
+            
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            text-align: center;
-            width: 80%;
-            max-width: 400px;
+            gap: 25px; /* メニュー同士の間隔 */
+            padding: 20px 0;
+            
+            /* スクロールバーを隠す（見た目重視） */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
+        #nav-container::-webkit-scrollbar { display: none; }
         
+        /* --- 3. メニュー項目（ゴシック体へ変更！） --- */
         .nav-item {
-            display: block;
-            font-family: "Yu Mincho", serif;
-            font-size: 1.2rem;
-            letter-spacing: 0.2em;
-            padding: 15px;
+            /* Flexboxで記号と文字を横並びに整列 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* 記号と文字の間の距離 */
+            gap: 1.5rem; 
+            
+            text-decoration: none;
+            color: inherit;
             transition: opacity 0.3s;
+            padding: 5px;
+            
+            /* ★修正：ゴシック体系（サンセリフ）に変更 */
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            font-weight: 300; /* 細めでスタイリッシュに */
         }
+
         .nav-item:hover { opacity: 0.6; }
-        
+
+        /* 文字の設定 */
+        .label {
+            font-size: 1.1rem; /* ゴシックだと少し大きく見えるので微調整 */
+            letter-spacing: 0.1em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* 記号の設定 */
+        .symbol {
+            font-size: 1.0rem;
+            opacity: 0.6;
+            flex-shrink: 0;
+        }
+
+        /* 奇数番目（文字が左、記号が右） */
+        .nav-item:nth-child(odd) { flex-direction: row; }
+        .nav-item:nth-child(odd) .label { text-align: right; }
+
+        /* 偶数番目（記号が左、文字が右） */
+        .nav-item:nth-child(even) { flex-direction: row-reverse; }
+        .nav-item:nth-child(even) .label { text-align: left; }
+
         /* スマホ向け調整 */
         @media (max-width: 768px) {
-            #nav-container { width: 90%; }
+            #nav-container { width: 95%; gap: 20px; }
+            .nav-item { gap: 1rem; }
+            .label { font-size: 1.0rem; }
         }
     </style>
 </head>
@@ -61,18 +105,11 @@
 
     <nav id="nav-container">
         {{ range .Site.Menus.main }}
-            <a href="{{ .URL | relLangURL }}" class="nav-item item-{{ .Weight }}" style="text-decoration: none; color: inherit;">
-                {{ if modBool .Weight 2 }}
-                    <span class="symbol">{{ .Pre }}</span>
-                    <span class="label label-right">
-                        {{ .Name | replaceRE "([〈\\(])" "<br>$1" | safeHTML }}
-                    </span>
-                {{ else }}
-                    <span class="label label-left">
-                        {{ .Name | replaceRE "([〈\\(])" "<br>$1" | safeHTML }}
-                    </span>
-                    <span class="symbol">{{ .Pre }}</span>
-                {{ end }}
+            <a href="{{ .URL | relLangURL }}" class="nav-item item-{{ .Weight }}">
+                <span class="label">
+                    {{ .Name | replaceRE "([〈\\(])" "<br>$1" | safeHTML }}
+                </span>
+                <span class="symbol">{{ .Pre }}</span>
             </a>
         {{ end }}
     </nav>
