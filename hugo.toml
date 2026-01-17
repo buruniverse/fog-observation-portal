@@ -67,12 +67,12 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
     weight = 2  # 優先順位を2位に下げておく
     title = '∵霧観測窓∴'
     
-    # メニューは一旦全部コメントアウトして隠しておく
-    # [[languages.ja.menu.main]]
-    #     identifier = 'blog'
-    #     pre = 'μ'
-    #     name = '雲海棚〈ブログ〉'
-    #     url = '/ja/posts/' 
-    #     weight = 3
+     メニューは一旦全部コメントアウトして隠しておく
+     [[languages.ja.menu.main]]
+         identifier = 'blog'
+         pre = 'μ'
+         name = '雲海棚〈ブログ〉'
+         url = '/ja/posts/' 
+         weight = 3
 
 # disableKinds = ["taxonomy", "term"]
