@@ -60,19 +60,19 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
     #     url = 'https://yourshop.base.shop'
     #     weight = 7
 
-  # --- 2. 日本語（サブ・今回は隠す） ---
+  # --- 2. 日本語（サブ） ---
   [languages.ja]
     languageName = '日本語'
     contentDir = 'content/ja'
-    weight = 2  # 優先順位を2位に下げておく
+    weight = 2
     title = '∵霧観測窓∴'
     
-     メニューは一旦全部コメントアウトして隠しておく
      [[languages.ja.menu.main]]
          identifier = 'blog'
          pre = 'μ'
          name = '雲海棚〈ブログ〉'
-         url = '/ja/posts/' 
+         # ★ここです！ '/ja/posts/' ではなく '/posts/' に変更
+         url = '/posts/' 
          weight = 3
 
 # disableKinds = ["taxonomy", "term"]

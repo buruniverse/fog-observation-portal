@@ -3,16 +3,47 @@
 <head>
     {{ partial "head.html" . }}
     <style>
-        /* --- 1. 基本設定 --- */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;     /* ここはシンプルに100%にする */
-            overflow: hidden; /* スクロール禁止 */
-            position: fixed;  /* ★追加: 画面に釘付けにする */
-            background: var(--bg-color);
-        }
+        /* --- 1. 基本設定（最強固定モード） --- */
+    html {
+        /* HTML全体にも背景色を指定して、隙間が出ても色を合わせる */
+        background: var(--bg-color);
+        /* これが重要！Safariの「びよよーん（バウンス）」を禁止する */
+        overscroll-behavior: none;
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* bodyも固定 */
+        position: fixed;
+        inset: 0; /* top, right, bottom, left: 0 の短縮形 */
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg-color);
+        overscroll-behavior: none;
+    }
+
+    /* 読書コンテナの高さも修正 */
+    #reading-container {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100vw; 
+        /* 100vhだとアドレスバー分ずれるので、親(body)に合わせる */
+        height: 100%; 
+        z-index: 20; 
+        pointer-events: none; 
+        opacity: 0;
+        transition: opacity 0.8s ease; 
+        overflow-y: auto; 
+        scroll-behavior: smooth;
+        padding-bottom: 150px;
+    
+        /* コンテナ内でのスクロールでのバウンスも防ぐならここにも */
+        overscroll-behavior-y: contain; 
+    }
         #canvas { position: fixed; top: 0; left: 0; z-index: 0; }
 
         /* タイトル消し */
