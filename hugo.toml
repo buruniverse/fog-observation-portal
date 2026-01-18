@@ -1,5 +1,5 @@
 baseURL = 'https://fog-observation-portal.pages.dev/'
-title = '∵ Fog Observation Portal ∴' # 英語タイトルをメインに
+title = '∴ Fog Observation Portal ∵' # 英語タイトルをメインに
 defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
 
 [languages]
@@ -65,7 +65,7 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
     languageName = '日本語'
     contentDir = 'content/ja'
     weight = 2
-    title = '∵霧観測窓∴'
+    title = '∴霧観測窓∵'
     
      [[languages.ja.menu.main]]
          identifier = 'blog'
