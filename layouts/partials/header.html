@@ -7,9 +7,9 @@
         </h1>
         <p id="site-description">
             {{ if eq .Lang "en" }}
-                –Thoughts and experiments, left unfocused as fog–
+                –Thoughts and experiments, <br class="desc-break">left unfocused as fog–
             {{ else }}
-                ー霧のままの思考と実験の観測場ー
+                ー霧のままの思考と実験の観測ポータルー
             {{ end }}
         </p>
     </div>
@@ -105,7 +105,7 @@
     /* 3. タイトル自体のデザインとフェードイン演出 */
     #main-title {
         display: inline-block;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         font-weight: 300;
         letter-spacing: 0.8rem;
         margin: 0;
@@ -125,6 +125,22 @@
         line-height: 1.6;
         animation: fogFadeIn 1.5s cubic-bezier(0.2, 0, 0.3, 1) 0.3s forwards;
         animation-fill-mode: backwards;
+    }
+
+    /* PC版では改行を無効化 */
+    .desc-break {
+        display: inline;
+    }
+
+    @media (max-width: 768px) {
+        #site-description { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.1rem;
+        }
+        /* スマホ版で改行を有効化 */
+        .desc-break {
+            display: block;
+        }
     }
 
     @media (max-width: 768px) {
