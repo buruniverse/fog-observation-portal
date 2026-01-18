@@ -1,6 +1,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<title>
+{{ if .IsHome }}
+  {{ if eq .Lang "en" }}∴ Fog Observation Portal ∵{{ else }}∴霧観測窓∵{{ end }}
+{{ else }}
+  {{ .Title }} | {{ if eq .Lang "en" }}∴ Fog Observation Portal ∵{{ else }}∴霧観測窓∵{{ end }}
+{{ end }}
+</title>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
 <style>
     :root { --bg-color: #f7f7f5; --text-color: #222; --symbol-opacity: 0.85; }
