@@ -2,9 +2,16 @@
     
     {{ if .IsHome }}
     <div id="center-branding">
-    <h1 id="main-title">
-        {{ .Site.Title | safeHTML }}
-    </h1>
+        <h1 id="main-title">
+            {{ .Site.Title | safeHTML }}
+        </h1>
+        <p id="site-description">
+            {{ if eq .Lang "en" }}
+                –A window for observation of thoughts and experiments, left as unfocused fog–
+            {{ else }}
+                ー収束させない霧のままの思考と実験の観測ポータルー
+            {{ end }}
+        </p>
     </div>
     {{ end }}
 
@@ -106,6 +113,25 @@
         line-height: 1.3;
         /* 霧の中から現れるようなアニメ */
         animation: fogFadeIn 1.2s cubic-bezier(0.2, 0, 0.3, 1) forwards;
+    }
+
+    #site-description {
+        font-size: 0.85rem;
+        font-weight: 300;
+        letter-spacing: 0.15rem;
+        margin: 15px 0 0 0;
+        color: var(--text-color);
+        opacity: 0.7;
+        line-height: 1.6;
+        animation: fogFadeIn 1.5s cubic-bezier(0.2, 0, 0.3, 1) 0.3s forwards;
+        animation-fill-mode: backwards;
+    }
+
+    @media (max-width: 768px) {
+        #site-description { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.1rem;
+        }
     }
 
     @keyframes fogFadeIn {
