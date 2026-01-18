@@ -8,7 +8,7 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
     languageName = 'English'
     contentDir = 'content/en'
     weight = 1  # 優先順位を1位に
-    title = "∵ Fog <br class='mobile-break'>Observation <br class='mobile-break'>Portal ∴"
+    title = "∴ Fog <br class='mobile-break'>Observation <br class='mobile-break'>Portal ∵"
     
     # 英語メニュー（ここをアクティブにする）
     # [[languages.en.menu.main]]
