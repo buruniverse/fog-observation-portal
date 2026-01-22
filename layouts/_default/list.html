@@ -100,7 +100,7 @@
 
         /* 記事 */
         .post-entry {
-            display: none; margin-bottom: 300px; opacity: 0;
+            display: none; margin-bottom: 200px; opacity: 0;
             transform: translateY(20px); transition: opacity 0.8s, transform 0.8s;
             position: relative;
         }
@@ -201,14 +201,18 @@
         body.dark-mode #close-btn:hover { background: #eee; color: #000; }
 
         @media (max-width: 768px) {
-            #list-branding { top: 18vh !important; }
-            #shelf-view { padding: 0 20px; gap: 20px; }
-            .post-entry { margin-bottom: 150px; }
-            .book-column { padding: 0 25px; } 
-            .page-number-display { right: 0; top: -25px; font-size: 0.7rem; } 
-            #close-btn { bottom: 20px; right: 20px; padding: 8px 15px; }
+        #list-branding { top: 18vh !important; }
+        #shelf-view { padding: 0 20px; gap: 20px; }
+        .post-entry { margin-bottom: 150px; }
+        .book-column { padding: 0 25px; } 
+        .page-number-display { right: 0; top: -25px; font-size: 0.7rem; } 
+        #close-btn { bottom: 20px; right: 20px; padding: 8px 15px; }
+    
+        .entry-content { 
+            font-size: 0.95rem; 
         }
-        
+    }
+    
         @keyframes slideLeft { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
     </style>
 </head>
@@ -250,7 +254,9 @@
     </div>
     
     <div id="running-tag"></div>
-    <button id="close-btn" onclick="closeShelf()">棚に戻る</button>
+    <button id="close-btn" onclick="closeShelf()">
+    {{ if eq .Lang "en" }}← BACK TO SHELF{{ else }}棚に戻る{{ end }}
+    </button>
 
     <div id="global-memo-overlay">
         <div id="global-memo-backdrop" onclick="closeGlobalMemo()"></div>
