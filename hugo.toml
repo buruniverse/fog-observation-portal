@@ -28,7 +28,7 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
     [[languages.en.menu.main]]
         identifier = 'blog'
         pre = 'μ'
-        name = 'Cloud Sea Shelf 〈Blog〉'
+        name = 'Book Shelf 〈Blog〉'
         url = '/posts/'  # 英語がメインになったので /en/posts ではなく /posts/ でOKになります
         weight = 3
 
@@ -70,8 +70,7 @@ defaultContentLanguage = 'en'        # ★ここを英語(en)に変更！
      [[languages.ja.menu.main]]
          identifier = 'blog'
          pre = 'μ'
-         name = '雲海棚〈ブログ〉'
-         # ★ここです！ '/ja/posts/' ではなく '/posts/' に変更
+         name = '本棚〈ブログ〉'
          url = '/posts/' 
          weight = 3
 

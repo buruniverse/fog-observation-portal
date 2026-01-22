@@ -7,17 +7,21 @@ tags: ["AI", "thinking", "experiment", "building a clone of myself"]
 ---
 
 I’m embarrassingly lazy, so I thought,  
+
 “Wouldn’t it be nice if I had an AI that could post things for me?”  
 
 That was all it started as—just a light, lazy idea.  
+
 But once I actually began, the texture turned out to be way deeper and more interesting than I expected.
 
-I’d always *wanted* to do something like this.  
+I’d always *wanted* to do something like this. 
+
 Until now, though, my approach had been more like,  
 “Let’s just have an AI do things in a nice way for me.”  
 
 The problem with that is, the output inevitably becomes a little too *AI-like*—  
 smooth, glossy, frictionless.  
+
 I wanted more *hand-feel* than that.
 
 So here’s what I did.
@@ -180,6 +184,7 @@ abstract_fragments_v0_1:
 {{< /memo >}}
 
 For some reason, though, this process drains my energy a lot.  
+
 I don’t really know why.
 
 Anyway—now that I have these,  
