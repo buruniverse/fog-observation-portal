@@ -3,7 +3,7 @@ title: "I Started Building a Thinking Clone"
 date: 2026-01-22
 draft: false
 image: "#"
-tags: ["AI", "thinking", "experiment", "building a clone of myself"]
+tags: ["AI", "thoughts", "experiment", "A clone of myslef"]
 ---
 
 I’m embarrassingly lazy, so I thought,  
