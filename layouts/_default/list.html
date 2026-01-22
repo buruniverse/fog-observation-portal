@@ -128,12 +128,24 @@
         .memo-box-pc { display: none; }
 
         @media (min-width: 1000px) {
-            .memo-wrapper { position: static; }
+            .memo-wrapper { position: relative; }
             .memo-box-pc {
-                position: absolute; left: 100%; top: -10px; margin-left: 50px; width: 260px;
-                background: rgba(255, 255, 255, 0.9); padding: 15px; font-size: 0.85rem;
-                border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                display: none; color: #333; text-align: left; line-height: 1.6;
+                position: absolute; 
+                left: 100%; 
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 50px; 
+                width: 260px;
+                background: rgba(255, 255, 255, 0.9); 
+                padding: 15px; 
+                font-size: 0.85rem;
+                border-radius: 4px; 
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                display: none; 
+                color: #333; 
+                text-align: left; 
+                line-height: 1.6;
+                white-space: pre-wrap; /* ← これを追加 */
             }
             .memo-wrapper:hover .memo-box-pc { display: block; animation: slideLeft 0.3s ease; }
             .memo-label { display: block; font-size: 0.75rem; font-weight: bold; color: #999; margin-bottom: 5px; border-bottom: 1px solid #eee; text-transform: uppercase; }
@@ -173,7 +185,7 @@
         #global-memo-overlay.active #global-memo-content { transform: translateY(0); }
         
         .global-memo-label { font-size: 0.8rem; color: #999; font-weight: bold; margin-bottom: 10px; display: block; letter-spacing: 1px; }
-        .global-memo-text { font-size: 1rem; line-height: 1.8; color: #333; font-family: "Yu Mincho", serif; }
+        .global-memo-text { font-size: 1rem; line-height: 1.8; color: #333; font-family: "Yu Mincho", serif; white-space: pre-wrap; }
         
         body.dark-mode #global-memo-content { background: #2a2a2e; border-color: #444; }
         body.dark-mode .global-memo-text { color: #eee; }
