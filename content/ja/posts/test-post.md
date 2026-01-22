@@ -3,7 +3,7 @@ title: "テスト投稿"
 date: 2026-01-11
 draft: false
 image: "/images/IMG_3399.jpg" # サムネイル用
-tags: ["ネコ", "散歩"]  
+tags: ["日常"]  
 ---
 
 テスト。
