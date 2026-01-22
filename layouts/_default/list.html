@@ -229,12 +229,7 @@
                     <span class="entry-date">{{ .Date.Format "2006.01.02" }}</span>
                 </header>
                 <div class="entry-content">
-                    {{ if .Truncated }}
-                        {{ .Summary }}
-                        <a href="{{ .Permalink }}" class="read-more-link">... 続きを読む</a>
-                    {{ else }}
-                        {{ .Content }}
-                    {{ end }}
+                    {{ .Content }}
                 </div>
             </article>
             {{ end }}
